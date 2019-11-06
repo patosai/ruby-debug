@@ -1,9 +1,6 @@
 require "mkmf"
 
-if RUBY_VERSION >= "1.9"
-  STDERR.print("Ruby version #{RUBY_VERSION} is too new\n")
-  exit(1)
-elsif RUBY_VERSION >= "1.8"
+if RUBY_VERSION >= "1.8"
   if RUBY_RELEASE_DATE < "2005-03-22"
     STDERR.print("Ruby release date #{RUBY_RELEASE_DATE} is too old\n")
     exit(1)
